@@ -1,0 +1,19 @@
+--------------------------------------------------------------------------------------------------
+TERRAFORM:
+--------------------------------------------------------------------------------------------------
+
+Git Hub -> Terraform Cloud		
+		
+	Terraform Cloud -> Settings -> VCS -> Source	
+		
+		Terraform -> AWS (Using roles and external ID to solve confused deputy problem)
+
+--------------------------------------------------------------------------------------------------
+JENKINS-JAVA FLOW:
+--------------------------------------------------------------------------------------------------
+jenkinsfile -> Passing the values		
+
+Shared Library:	
+		"git -> maven build -> maven site -> Sonarqube code analyse -> waitforqualitygate -> chekmarx -> push to jfrog -> Push to ECR ->  udeploy version import -> deploy to EKS"
+
+  
