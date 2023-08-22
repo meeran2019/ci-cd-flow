@@ -16,4 +16,21 @@ jenkinsfile -> Passing the values
 Shared Library:	
 		"git -> maven build -> maven site -> Sonarqube code analyse -> waitforqualitygate -> chekmarx -> push to jfrog -> Push to ECR ->  udeploy version import -> deploy to EKS"
 
-  
+--------------------------------------------------------------------------------------------------
+ANSIBLE-UDEPLOY FLOW:
+--------------------------------------------------------------------------------------------------
+
+WORKFLOW FOR UDEPLOY DEPLOYMENT: 
+
+    Create a base resource -> Add agent to base resource -> Create a component -> Add version to the component -> Create component process -> Create an application -> Add component to the application -> Create application process -> Create application environment -> Add base resource to application environment -> Add component to resource tree -> Run the process in application environment. 
+
+ANSIBLE EXECUTION FOR JAVA:
+
+1. Using ansible git module, download the repository.
+2. If any dependency, using ansible-galaxy to download the roles.
+3. Download the artifacts from jfrog.
+4. Call the metadata(169.254..) to get the agent name.
+5. If any vault, it pass as file in playbook.
+6. Run the ansible playbook.
+
+--------------------------------------------------------------------------------------------------
