@@ -43,4 +43,23 @@ Shared Library:
 	Download source repo from git -> nuget restore to download dependencies -> Sonarqube scanning -> Code build using MS build -> Secuity scanning using Chekmarx -> Create a Nuget Spec file and nuget packaging -> uplaod to artifactory -> Udeploy version import 
 
 --------------------------------------------------------------------------------------------------
+JENKINS-NODE.JS FLOW:
+--------------------------------------------------------------------------------------------------
+jenkinsfile -> Passing the values		
 
+Shared Library:
+
+	Download source repo from git -> NPM Install -> Lint (To validate package.json file by using rules) -> Checkmarx -> Unit test using JEST -> Build using NEST -> Push to Artifactory
+
+--------------------------------------------------------------------------------------------------
+JENKINS-PYTHON FLOW:
+--------------------------------------------------------------------------------------------------
+jenkinsfile -> Passing the values
+
+	Download source repo from git -> Sonarqube -> Checkmarx -> Zip the code -> Publish to artifactory -> Udeploy import -> git remote tag and push to repo. 
+
+--------------------------------------------------------------------------------------------------
+
+
+
+	
