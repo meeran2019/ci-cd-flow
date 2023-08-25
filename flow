@@ -62,10 +62,11 @@ jenkinsfile -> Passing the values
 CD JAVA FLOW:
 --------------------------------------------------------------------------------------------------
 
-run_once -> Special variable to run on one host only.
-playbook_dir -> it is working directory.
-
 1. Using get_url module to download artifacts.
-2. 
+2. Take backup of existing deployment folder.
+3. Templating the configuration variable.
+4. zip the application files
+5. Copy to target server. 
+
 
 	
