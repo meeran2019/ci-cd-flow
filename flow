@@ -59,7 +59,13 @@ jenkinsfile -> Passing the values
 	Download source repo from git -> Sonarqube -> Checkmarx -> Zip the code -> Publish to artifactory -> Udeploy import -> git remote tag and push to repo. 
 
 --------------------------------------------------------------------------------------------------
+CD JAVA FLOW:
+--------------------------------------------------------------------------------------------------
 
+run_once -> Special variable to run on one host only.
+playbook_dir -> it is working directory.
 
+1. Using get_url module to download artifacts.
+2. 
 
 	
