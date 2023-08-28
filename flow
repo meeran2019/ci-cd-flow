@@ -68,5 +68,14 @@ CD JAVA FLOW:
 4. zip the application files
 5. Copy to target server. 
 
+--------------------------------------------------------------------------------------------------
+CD .NET FLOW:
+--------------------------------------------------------------------------------------------------
 
-	
+1. Using get_url module to download artifacts.
+2. Take backup of existing deployment folder (win_copy).
+3. Templating the configuration variable.
+4. zip the application files
+5. Copy to target server (Win_robocopy). 	
+
+--------------------------------------------------------------------------------------------------
