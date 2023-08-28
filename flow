@@ -79,3 +79,20 @@ CD .NET FLOW:
 5. Copy to target server (Win_robocopy). 	
 
 --------------------------------------------------------------------------------------------------
+CD .NET IIS SERVER FLOW:
+--------------------------------------------------------------------------------------------------
+1. Create a app pool
+2. Create a website under the app pool.
+3. Create a https binding. 
+4. set iis users
+5. iis app pool stop.
+6. deployment process.
+7. iis app pool start. 
+
+--------------------------------------------------------------------------------------------------
+LAMBDA FUNCTION CREATION FLOW:
+--------------------------------------------------------------------------------------------------
+1. Download the artifacts.
+2. Create a lambda function and pass the downloaded artifacts as zip file.
+
+
