@@ -94,5 +94,7 @@ LAMBDA FUNCTION CREATION FLOW:
 --------------------------------------------------------------------------------------------------
 1. Download the artifacts.
 2. Create a lambda function and pass the downloaded artifacts as zip file.
+3. Using Udeploy API call to trigger Terraform to update version.
 
+--------------------------------------------------------------------------------------------------
 
